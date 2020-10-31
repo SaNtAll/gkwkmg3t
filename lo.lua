@@ -2,7 +2,7 @@ local HttpService = game:GetService('HttpService')
 local Supported = false
 local Script = nil
 
-local GameList = game:HttpGet('https://gitlab.com/SaNtAll/lemoxv4/-/raw/master/GameList.json')
+local GameList = game:HttpGet('https://raw.githubusercontent.com/SaNtAll/gkwkmg3t/main/GameList.json')
 function GetGame()
     local GameTable = HttpService:JSONDecode(GameList)
     if GameTable[tostring(game.PlaceId)] then 
